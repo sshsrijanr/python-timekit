@@ -1,5 +1,5 @@
 import requests
-from components.base import *
+from timekit.components.base import *
 __all__ = ["Project"]
 
 
