@@ -1,6 +1,7 @@
-# Timekit API Integration
+# Timekit.io
 
 This package can be used to integration Timekit APIs with your project.
+for more information [click here](https://developers.timekit.io/reference#getting-started)
 
 ## Installation
 

@@ -5,10 +5,13 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='python-timekit',
-    version='0.1.0',
+    version='0.1.2',
+    author="Srijan Ramavat",
+    author_email="srijan.ramavat@gmail.com",
     description='A package to integrate Timekit APIs with your project',
     py_modules=['timekit'],
     package_dir={'': 'src'},
+    packages=['components'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
