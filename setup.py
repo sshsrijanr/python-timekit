@@ -4,14 +4,15 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setup(
-    name='python-timekit',
-    version='0.1.2',
+    name='python_timekit',
+    version='0.0.1',
     author="Srijan Ramavat",
     author_email="srijan.ramavat@gmail.com",
-    description='A package to integrate Timekit APIs with your project',
+    description=
+    'An un-official package to integrate Timekit APIs with your project',
     py_modules=['timekit'],
     package_dir={'': 'src'},
-    packages=['components'],
+    packages=['timekit', 'timekit/components'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
@@ -25,9 +26,4 @@ setup(
     install_requires=[
         "requests==2.24.0",
     ],
-    extras_require={
-        "dev": [
-            "pytest>=3.7",
-        ],
-    },
 )

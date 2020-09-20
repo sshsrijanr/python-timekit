@@ -8,7 +8,7 @@ for more information [click here](https://developers.timekit.io/reference#gettin
 Run the following to install
 
 ```python
-pip install timekit
+pip install python_timekit
 ```
 
 ## Usage
