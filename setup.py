@@ -4,7 +4,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setup(
-    name='timekit',
+    name='python-timekit',
     version='0.0.1',
     description='A package to integrate Timekit APIs with your project',
     py_modules=['timekit'],

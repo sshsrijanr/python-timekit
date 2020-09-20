@@ -8,23 +8,29 @@ class Project(APIBaseMethod):
         APIBaseMethod.__init__(self, app_token)
         self.url = "{}/projects".format(self.url)
 
-    def list_all(self, limit=50) -> Response:
-        response = requests.get("{}?limit={}".format(self.url, limit),
-                                auth=self.auth,
-                                headers=self.headers)
-        return handle_response(response)
-
-    def add_resources(self, project_id, data) -> Response:
-        response = requests.post("{}/{}/resources".format(
-            self.url, project_id),
+    def add_resources(self, id, data) -> Response:
+        response = requests.post("{}/{}/resources".format(self.url, id),
                                  json=data,
                                  headers=self.headers,
                                  auth=self.auth)
         return handle_response(response)
 
-    def set_resources(self, project_id, data) -> Response:
-        response = requests.put("{}/{}/resources".format(self.url, project_id),
+    def set_resources(self, id, data) -> Response:
+        response = requests.put("{}/{}/resources".format(self.url, id),
                                 json=data,
+                                headers=self.headers,
+                                auth=self.auth)
+        return handle_response(response)
+
+    def remove_resources(self, id, resource_id) -> Response:
+        response = requests.put("{}/{}/resources/{}".format(
+            self.url, id, resource_id),
+                                headers=self.headers,
+                                auth=self.auth)
+        return handle_response(response)
+
+    def get_resources(self, id) -> Response:
+        response = requests.get("{}/{}/resources".format(self.url, id),
                                 headers=self.headers,
                                 auth=self.auth)
         return handle_response(response)
