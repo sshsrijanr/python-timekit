@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='python-timekit',
-    version='0.0.1',
+    version='0.1.0',
     description='A package to integrate Timekit APIs with your project',
     py_modules=['timekit'],
     package_dir={'': 'src'},
