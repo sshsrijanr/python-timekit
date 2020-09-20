@@ -8,7 +8,7 @@ setup(
     version='0.0.1',
     description='A package to integrate Timekit APIs with your project',
     py_modules=['timekit'],
-    package_dir={'':'src'},
+    package_dir={'': 'src'},
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
@@ -19,10 +19,10 @@ setup(
     ],
     long_description=long_description,
     long_description_content_type="text/markdown",
-    install_requires = [
+    install_requires=[
         "requests==2.24.0",
     ],
-    extras_require = {
+    extras_require={
         "dev": [
             "pytest>=3.7",
         ],
