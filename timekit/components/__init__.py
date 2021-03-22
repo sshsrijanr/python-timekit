@@ -2,4 +2,4 @@
 
 from __future__ import absolute_import
 
-from . import apps, base, bookings, projects, resources
+from . import apps, base, bookings, projects, resources, availability
