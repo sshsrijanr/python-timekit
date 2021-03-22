@@ -80,3 +80,11 @@ response = client.resources.availability_constraints(id, data)
 ```
 
 for more information on Resource related APIs [click here](https://developers.timekit.io/reference#resources)
+
+### Availability
+
+```python
+response = client.availability.list(data)
+```
+
+for more information on Resource related APIs [click here](https://developers.timekit.io/reference#availability-v2)
