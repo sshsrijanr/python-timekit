@@ -9,3 +9,4 @@ class TimekitAPI:
         self.bookings = components.bookings.Booking(app_token)
         self.projects = components.projects.Project(app_token)
         self.resources = components.resources.Resource(app_token)
+        self.availability = components.availability.Availability(app_token)
