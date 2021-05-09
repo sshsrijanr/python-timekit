@@ -87,4 +87,4 @@ for more information on Resource related APIs [click here](https://developers.ti
 response = client.availability.list(data)
 ```
 
-for more information on Resource related APIs [click here](https://developers.timekit.io/reference#availability-v2)
+for more information on Availability related APIs [click here](https://developers.timekit.io/reference#availability-v2)
