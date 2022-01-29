@@ -1,6 +1,6 @@
 # python-timekit
 
-![Downloads](https://img.shields.io/badge/downloads-2.3K-brightgreen)
+[![Downloads](https://pepy.tech/badge/python-timekit)](https://pepy.tech/project/python-timekit)
 ![Dependencies](https://img.shields.io/librariesio/release/pypi/python-timekit)
 
 This package can be used to integration Timekit APIs with your project.
