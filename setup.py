@@ -52,6 +52,6 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     install_requires=[
-        "requests==2.24.0",
+        "requests==2.28.1",
     ],
 )
