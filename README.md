@@ -46,6 +46,7 @@ response = client.bookings.list(limit, page, dynamic_includes, search, order_by,
 response = client.bookings.retrieve(id)
 response = client.bookings.update_state(id, action)
 response = client.bookings.update_meta(id, data)
+response = client.bookings.reschedule(id, data)
 response = client.bookings.create_in_bulk(data)
 response = client.bookings.update_in_bulk(data)
 response = client.bookings.groups.list(limit, page, search)
