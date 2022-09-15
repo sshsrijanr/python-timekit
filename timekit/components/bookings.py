@@ -71,10 +71,12 @@ class Booking(APIBaseMethod):
         for more information refer https://developers.timekit.io/reference#bookingsidaction
         """
         if action and action not in [
-                'confirm', 'decline', 'cancel', 'cancel_by_owner'
+            'confirm', 'decline', 'cancel',
+            'cancel_by_owner', 'cancel_by_customer'
         ]:
             raise Exception("function argument action is invalid!")
         response = requests.put("{}/{}/{}".format(self.url, id, action),
+                                json={},
                                 auth=self.auth,
                                 headers=self.headers)
         return handle_response(response)
