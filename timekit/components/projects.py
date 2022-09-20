@@ -23,7 +23,7 @@ class Project(APIBaseMethod):
         return handle_response(response)
 
     def remove_resources(self, id, resource_id) -> Response:
-        response = requests.put("{}/{}/resources/{}".format(
+        response = requests.delete("{}/{}/resources/{}".format(
             self.url, id, resource_id),
                                 headers=self.headers,
                                 auth=self.auth)
