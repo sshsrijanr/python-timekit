@@ -15,12 +15,14 @@ class Booking(APIBaseMethod):
         self.url = "{}/bookings".format(self.url)
         self.groups = Group(app_token)
 
-    def create(self, data, dynamic_includes=[]) -> Response:
+    def create(self, data, dynamic_includes=None) -> Response:
         """
         data: json object, 
         dynamic_includes: list
         for more information refer https://developers.timekit.io/reference#bookings
         """
+        if dynamic_includes is None:
+            dynamic_includes = []
         includes = ""
         if dynamic_includes != [] and type(dynamic_includes) is list:
             includes = ",".join(dynamic_includes)
@@ -34,7 +36,7 @@ class Booking(APIBaseMethod):
     def list(self,
              limit=50,
              page=1,
-             dynamic_includes=[],
+             dynamic_includes=None,
              search="",
              order_by=None,
              sorted_by=None) -> Response:
@@ -47,6 +49,8 @@ class Booking(APIBaseMethod):
         sorted_by: string
         for more information refer https://developers.timekit.io/reference#bookings-2
         """
+        if dynamic_includes is None:
+            dynamic_includes = []
         includes = ""
         if dynamic_includes != [] and type(dynamic_includes) is list:
             includes = ",".join(dynamic_includes)

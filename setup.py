@@ -31,7 +31,7 @@ def find_version(file_paths):
 setup(
     name='python_timekit',
     version=find_version(["timekit", "__init__.py"]),
-    url='https://github.com/Srijan-Ramavat/python-timekit',
+    url='https://github.com/sshsrijanr/python-timekit',
     author="Srijan Ramavat",
     author_email="srijan.ramavat@gmail.com",
     description=
@@ -43,6 +43,7 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         "Operating System :: OS Independent",
         "Development Status :: 5 - Production/Stable", "Topic :: Internet",
